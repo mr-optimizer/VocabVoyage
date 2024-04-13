@@ -1,0 +1,54 @@
+.main_screen {
+  background-color: white;
+  border-radius: 10px;
+  min-height: 80vh;
+  width: 50%;
+  overflow: hidden;
+  color: black;
+}
+.ms_heading {
+  font-weight: bolder;
+  padding: 1rem 1rem;
+  border-bottom: 1.5px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ms_body {
+  background-color: white;
+  height: 74%;
+  padding: 10px 15px;
+}
+
+.hint_box{
+  box-shadow: 1px 1px 5px 1px rgba(1, 1, 1, 0.07);
+  min-height: 25vh;
+  padding: 15px 15px;
+  margin: 7px 1rem 2rem 1rem;
+}
+.hint{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.hint_button{
+  cursor: pointer;
+  padding: 5px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+.hint_text{
+
+}
+.display_screen{
+  border: 12px solid black;
+  margin: 0 20px;
+  padding: 2.3rem 0;
+  background-color: rgb(47, 47, 47);
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
