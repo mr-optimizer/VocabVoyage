@@ -1,0 +1,9 @@
+.landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    min-height: 100vh;
+    gap: 3rem;
+    flex-direction: column;
+}
