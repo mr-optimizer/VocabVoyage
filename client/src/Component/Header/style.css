@@ -2,7 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    /* background-color: black; */
+    background-image: linear-gradient(to bottom , black, rgba(0, 0, 0, 0.062));
     color: white;
     padding: 0 2rem;
+    height: 10vh;
+}
+.company_logo{
+    cursor: pointer;
 }
