@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 import "./style.css";
 
 const NavBar = () => {
-  const [roomId, setRoomId] = useState("0");
-  const [userId, setUserId] = useState("0");
   const navigate = useNavigate();
-
+  const { roomID } = useSelector((state) => state.room);
   return (
     <div className="navbar">
-      <h1 onClick={()=> navigate("/") } className="company_logo">Descriptionary</h1>
+      <h1 onClick={() => navigate("/")} className="company_logo">
+        Descriptionary
+      </h1>
       <div>
-        <div className="nav_ids">
-          Room ID: <span>1abcd34</span>
-        </div>
-        <div className="nav_ids">
-          User ID: <span>1abcd</span>
-        </div>
+        {roomID && (
+          <div className="nav_ids">
+            Room ID: <span>{roomID}</span>
+          </div>
+        )}
       </div>
     </div>
   );

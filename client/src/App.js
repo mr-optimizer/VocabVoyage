@@ -10,7 +10,7 @@ const socket = io.connect('http://localhost:8000');
 function App() {
   return (
     <BrowserRouter>
-      <NavBar></NavBar>
+      <NavBar /> 
       <Routes>
         <Route path="/" element={<Landing socket={socket} />} />
         <Route path="/room" element={<Room socket={socket} />} />

@@ -36,15 +36,16 @@ io.on("connection", (socket) => {
   });
   socket.on("join-room", (data) => {
     const { user_name, room } = data;
-    socket.join(room);
+    const derived_room_no = Number(room); 
+    socket.join(derived_room_no);
     let __createdTime__ = Date.now();
     // Send message to all users currently in the room, apart from the user that just joined
     socket.emit("room-joined", {
       message: `${user_name}, You are in Room`,
       __createdTime__,
-      room_no: room,
+      room_no: derived_room_no,
     });
-    socket.to(room).emit("room-joined", {
+    socket.to(derived_room_no).emit("room-joined", {
       message: `${user_name} joined the room`,
     });
   });
