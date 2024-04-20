@@ -1,0 +1,10 @@
+total_rounds = 2*no_of_players_in_room
+option_count_of_words = 3
+no_of_hints = 3
+    i.    Category
+    ii    Sub-Category
+    iii.  Fill Vowels
+    iv.   
+
+
+
